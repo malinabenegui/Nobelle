@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang = "ro">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="machiaj, set, fard, ruj, iluminator, cumpara,online" />
+		<meta name="author" content="Malina Benegui">
+		<meta name="description" content="Gama de machiaje Nobelle. Vezi oferta!">
+		<title>Machiaj</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/comun.css">
+		<link rel="shortcut icon" type="image/x-icon" href="../Galerie/favicon.ico"/>
+		<script src = "../JS/Machiaj.js"></script>
+	</head>
+	
+	<body>
+	
+		<header>
+			<div id="meniu">
+				<div id="brand">
+					<h1><a href="./SITE.html">Nobelle</a></h1>
+				</div>
+				
+				<nav>
+					<ul class="menu">
+						<li>
+							<a href="Machiaj.html">Machiaj</a>
+							<ul class="submenu">
+								<li><a href="./Machiaj.html#ochi">Ochi</a></li>
+								<li><a href="./Machiaj.html#ten">Ten</a></li>
+								<li><a href="./Machiaj.html#buze">Buze</a></li>
+							</ul>
+						</li>
+						<li><a href="Accesorii.html">Accesorii</a></li>
+						<li><a href="Promotii.html">Promotii</a></li>
+						<li><a href="Branduri.html">Branduri</a></li>
+						<li><a href="Comm.html">Comentarii</a></li>
+					</ul>
+				</nav>
+				<div id="artificii">
+					<img src="../Galerie/Artificii.PNG" alt="artificii" title="">
+				</div>				
+			</div>
+		</header>
+		
+		<form>
+			<p id = "demo1"></p> <!--Data-->
+			<p id = "demo"> <img id = "demo2"></p> <!--text-->
+			<p id = "demo3"></p> <!--Pret maxim-->
+			<p id = "demo4"></p>
+			<p id = "demo5"></p>
+			<p id = "demo61"></p> <!--checkbox-->
+			<p id = "demo6"></p>
+			<p id = "demo7"></p>
+			<p id = "demo81"></p> <!--radio-->
+			<p id = "demo8"></p>
+			<p id = "demo9"></p>
+			<p id = "demo10"></p>
+			<p id = "demo11"></p>
+			<p id = "demo121"></p> <!--select-->
+			<p id = "demo12"></p>
+			<p id = "demo13"></p>
+			<!--<input type = "text" id = "Text" oninput = "tip_text()">
+			<img src = "../Galerie/cautare1.PNG" alt = "" title = "" id = "cautare">
+			<p id = "demo1"></p>
+		</form>
+			
+		<section id="filtru">
+			<h1>Filtru</h1>
+			
+			<form>
+				<p class = "filtru">Pret maxim</p>
+				<input type="range" id="Range" max="240" onchange = "pret_range()">
+				<p id="demo"></p>
+			</form>
+			
+			<form>
+			
+				<p class = "filtru">Culoare</p>
+				<input type = "checkbox" name = "color" value = "rosu" onclick = "check()">Rosu
+				<input type = "checkbox" name = "color" value = "roz" onclick = "check()">Roz
+				<input type = "checkbox" name = "color" value = "auriu" onclick = "check()">Auriu <br>
+				<input type = "checkbox" name = "color" value = "multicolor" onclick = "check()">Multicolor
+				<input type = "checkbox" name = "color" value = "negru" onclick = "check()">Negru
+			</form>
+			
+			<form>
+				<p class = "filtru">Tip produs</p>
+				<input type = "radio" name = "tip" value = "fard" onclick = "tip_pr()">Fard de pleoape<br>
+				<input type = "radio" name = "tip" value = "mascara" onclick = "tip_pr()">Mascara<br>
+				<input type = "radio" name = "tip" value = "highlighter" onclick = "tip_pr()">Highlighter<br>
+				<input type = "radio" name = "tip" value = "ruj" onclick = "tip_pr()">Ruj
+			</form>-->
+			
+			<button type = "button" id = "my_btn" onclick = "filtreaza()">Filtreaza</button>
+		</section>
+		
+		<div id="container">
+			<figure class="patrat" id="ochi">
+				<img src="../Galerie/eyeshadow1.JPG" alt="fard de pleoape becca"  title="fard" class = "imagi">
+				<figcaption>
+					<h2>Fard Becca</h2>
+					<div class="ppret">40 lei</div>
+				</figcaption>
+			</figure>
+			
+			<figure class="patrat">
+				<img src="../Galerie/eyeshadow2.JPG" alt="paleta ysl"  title="set fard" class = "imagi">
+				<figcaption>
+					<h2>Paleta YSL</h2> 
+					<div class="ppret">240 lei</div>
+				</figcaption>
+			</figure> 
+			
+			<figure class="patrat">
+				<img src="../Galerie/eyeshadow3.JPG" alt="paleta too faced"  title="set fard" class = "imagi">
+				<figcaption>
+					<h2>Paleta Too Faced</h2> 
+					<div class="ppret">140 lei</div>
+				</figcaption>
+			</figure>
+			
+			<figure class="patrat">
+				<img src="../Galerie/mascara.JPG" alt="mascara too faced" title="rimel" class = "imagi">
+				<figcaption>
+					<h2>Mascara</h2> 
+					<div class="ppret">70 lei</div>
+				</figcaption>
+			</figure>
+			
+			<figure class="patrat" id="ten">
+				<img src="../Galerie/highlighter_Fenty.JPG" title="highlighter" alt="highlighter fenty beauty" class = "imagi">
+				<figcaption>
+					<h2>Highlighter Fenty</h2>
+					<div class="ppret">110 lei</div>
+				</figcaption>
+			</figure>
+			
+			<figure class="patrat">
+				<img src="../Galerie/highlighter.JPG" title="highlighter" alt="highlighter too faced" class = "imagi">
+				<figcaption>
+					<h2>Highlighter Too Faced</h2> 
+					<div class="ppret">140 lei</div>
+				</figcaption>
+			</figure>
+		
+			<figure class="patrat">
+				<img src="../Galerie/highlighter2.JPG" title="highlighter" alt="highlighter becca" class = "imagi">
+				<figcaption>
+					<h2>Highlighter Becca</h2> 
+					<div class="ppret">100 lei</div>
+				</figcaption>
+			</figure>
+			
+			<figure class="patrat" id="buze">
+				<img src="../Galerie/lipstick.JPG" alt="ruj fenty beauty" title="ruj" class = "imagi">
+				<figcaption>
+					<h2>Ruj mat Fenty Beauty</h2>
+					<div class="ppret"> 140 lei</div>
+				</figcaption>
+			</figure>
+			
+			<figure class="patrat">
+				<img src="../Galerie/lipstick_YSL.JPG"  title="ruj mat" alt="ruj mat ysl" class = "imagi">
+				<figcaption>
+					<h2>Ruj Mat</h2>
+					<div class="ppret">140 lei</div>
+				</figcaption>
+			</figure>
+		</div>
+		<footer>
+			<hr>
+			<p>Nobelle Makeup Store Copyright &copy; 2018</p>
+		</footer>
+	</body>
+</html>

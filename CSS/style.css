@@ -1,0 +1,66 @@
+img#Fenty{
+	width:initial;
+}
+
+img#mail{
+	max-width:2.5%;
+}
+
+div#pics{
+	
+}
+
+ul#pics_list{
+	list-style: none;
+}
+
+#news_container{
+	margin-top:13%;
+	background: #ffe6f7;
+}
+
+h2{
+	margin-bottom:0%;
+}
+
+img#Fenty{
+	-ms-interpolation-mode: bicubic;
+	width: auto;
+}
+
+@media screen and (max-width: 570px){
+	img#Fenty2{
+		display: block;
+		width: 90%;
+	}
+	map{
+		display: none;
+		width: 0px;
+		height: 0px;
+	}
+	map>area{
+		display: none;
+	}
+	img#Fenty{
+		display:none;
+	}
+	
+}
+
+@media screen and (min-width: 570px){
+	img#Fenty2{
+		display:none;
+	}
+}
+
+.button_1{
+	background: black;
+	color:white;
+	cursor: pointer;
+	border-radius: 10px;
+	font-size:0.9rem;
+}
+
+footer{
+	background:lightgray;
+}

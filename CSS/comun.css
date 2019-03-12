@@ -1,0 +1,247 @@
+html {
+  font-size:16px;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	text-indent:0px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* track */
+::-webkit-scrollbar-track:vertical {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* bara */
+::-webkit-scrollbar-thumb:vertical {
+    background: #b3b3b3; 
+    border-radius: 10px;
+}
+
+/* bara la hover */
+::-webkit-scrollbar-thumb:hover:vertical{
+    background: gray; 
+}
+
+::-webkit-scrollbar-track:active{
+	color:black;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:1.5;
+	background-color:white;
+}
+
+a{
+	text-decoration: none;
+}
+
+header a{
+	color:white;
+}
+
+div#brand{
+	color:white;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+  width:100%;
+  padding-right:15%;
+}
+/*Meniu*/
+div#meniu{
+	background:black;
+	min-height:110px;
+}
+
+nav{
+	width:100%;
+}
+
+ul.menu>li, ul.menu>li>ul.submenu>li{
+	display:block;
+	font-weight:bold;
+	height:1.3rem;
+	background:black;
+	text-align:center;
+	line-height:1.2rem;
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+}
+ul.menu>li{
+	float:left;
+	width:12.5%;
+}
+ul.submenu>li{
+ width:100%;
+}
+ul.menu>li>a, ul.submenu>li>a{
+	display:block;
+	height:	100%;
+	text-decoration:none;
+	color:white;
+}
+
+ul.menu>li>ul.submenu{
+	position:relative;
+	top:0px;
+}
+
+ul.menu>li:hover{
+	overflow:visible;
+}
+
+ul.menu>li>a:hover, ul.submenu>li>a:hover{
+	background:lightgray;
+	color:black;
+}
+
+@media screen and (max-width:650px){
+	ul.menu>li{
+		float:none;
+		width:20%;
+	}
+	
+	ul.menu>li>ul.submenu>li{
+		margin-left: 5.3rem;
+		margin-top: -1.3rem;
+		margin-bottom:1rem;
+	}
+
+	ul.menu>li:hover ul.submenu{
+		width:100vw;
+		position:absolute;
+		top:4.3rem;
+	}
+	ul.menu>li:hover ul.submenu>li{
+		width:15%;
+		border:none;
+	}
+}
+/*Meniu finalizat*/
+
+/*figura in care este o poza*/
+figure.patrat{
+	max-width:250px;
+    height:350px;
+    margin-top:1%;
+	margin-left:1%;
+    margin-bottom: 5%;
+    float:left;
+}
+
+/*denumirea produselor*/
+h2{
+	font-size: 0.96rem;
+	margin-top:-2%;
+	margin-bottom:-1%;
+}
+
+img{ 
+	width:100%;
+}
+img#demo2{
+	width: auto;
+}
+img#cauta{
+	width: auto;
+}
+
+div#artificii{
+	width:10%;
+	margin-left:90%;
+	margin-top:-3%;
+	animation-name: artif;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+@keyframes artif{
+	0%{
+		opacity: 0; 
+		transform: rotate(0deg);
+	}
+		
+	50% {opacity: 1;}
+	
+	100%{
+		opacity: 0;
+		transform:rotate(359deg)
+	}
+}
+
+/*Containerul cu imagini*/
+div#container:after{ 
+	content: " ";
+	visibility: hidden;
+	font-size: 0;
+	height: 0;
+	clear: both;
+	display: block;
+	width:100%;
+}
+
+/*pretul initial al produselor la promotie*/
+.initial{ 
+	font-size:0.85rem;
+	text-decoration:line-through;
+}
+
+/*pretul produselor la promotie*/
+.pret{ 
+	margin-top:-2%;
+	color: red;
+}
+
+@media screen and (max-width: 800px) {
+    figure.patrat{
+		width: 30%;
+	}
+	
+	/*denumirea produselor*/
+	h2{
+		font-size: 0.75rem;
+		margin-top:-2%;
+		margin-bottom:-1%;
+	}
+	
+	figcaption{
+		font-size:0.9rem;
+	}
+
+	/*pretul initial al produselor la promotie*/
+	.initial{ 
+		font-size:0.65rem;
+		text-decoration:line-through;
+	}
+
+	/*pretul produselor la promotie*/
+	.pret{ 
+		margin-top:-2%;
+		font-size:0.9rem;
+		color: red;
+	}
+}
+
+
+/*Motor de cautare*/
+input[type=text]{
+	border: groove;
+	padding-top: 0.3%;
+}
+
+footer{
+	background:lightgray;
+	height:100%;
+}
